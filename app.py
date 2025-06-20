@@ -62,7 +62,7 @@ if uploaded_file is not None:
     # Visualisasi Clustering
     # ====================
     st.subheader("📊 Visualisasi Clustering (Jumlah Balita vs Tahun)")
-    fig, ax = plt.subplots(figsize=(10, 5))
+    fig, ax = plt.subplots(figsize=(6, 4))
     sns.scatterplot(x=df['jumlah_balita_stunting'], y=df['tahun'], hue=df['cluster'], palette='tab10', ax=ax)
     ax.set_title("Hasil Clustering K-Means")
     ax.set_xlabel("Jumlah Balita Stunting")
