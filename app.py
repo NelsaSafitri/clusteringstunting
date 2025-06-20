@@ -1,3 +1,14 @@
+import streamlit as st
+import pandas as pd
+import numpy as np
+from sklearn.preprocessing import LabelEncoder, StandardScaler
+from sklearn.cluster import KMeans
+from sklearn.metrics import silhouette_score
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+st.title("Clustering Stunting Balita dengan K-Means")
+
 @st.cache_data
 def load_data():
     try:
